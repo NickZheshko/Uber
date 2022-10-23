@@ -134,6 +134,7 @@ header
 	padding: 70px 0 65px 0
 
 .label
+	position: relative
 	width: 112px
 	height: 24px
 	margin: 0 auto
@@ -144,8 +145,13 @@ header
 	text-align: center
 	color: #fff
 	text-transform: uppercase
+	z-index: 2
+	&_white
+		background-color: white
+		color: #000
 
 .title
+	position: relative
 	display: block
 	margin-top: 38px
 	font-size: 38px
@@ -153,13 +159,23 @@ header
 	text-align: center
 	color: #222
 	text-transform: uppercase
+	z-index: 2
+	&_white
+		color: white
 
 .subtitle
+	position: relative
 	margin-top: 19px
 	font-size: 17px
 	font-weight: normal
 	text-align: center
 	color: #222  
+	z-index: 2
+	&_white
+		color: white
+
+
+
 
 .reasons
 	.reasons_block
@@ -231,3 +247,34 @@ header
 			border-radius: 100%
 			cursor: pointer
 
+
+.choice
+	position: relative
+	min-height: 900px
+	padding: 57px 0 137px 0
+	background: url('../img/squares.png') center (center / cover) no-repeat
+
+	&_car
+		display: block
+		position: relative
+		margin: 56px auto 0 auto
+		z-index: 2
+	
+	.black
+		height: 499px
+		width: 100%
+		position: absolute
+		background-color: #070716
+		top: 0
+		left: 0
+		z-index: 1
+
+	&_descr 
+		text-align: center
+		color: #222222
+		font-size: 17px
+		font-weight: 300
+		line-height: 24px
+	
+
+	
